@@ -1,0 +1,6 @@
+{
+    "playwright.env": {
+        "PWDEBUG": "1"
+    },
+    "playwright.showTrace": true
+} 
