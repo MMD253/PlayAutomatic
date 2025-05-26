@@ -8,11 +8,11 @@ export async function login(page: Page, username: string = TEST_CONFIG.credentia
     await page.waitForSelector('form', { state: 'visible' });
     
     // Ingresar credenciales
-    await page.fill('input[name="Usuario"]', username);
+    await page.fill('input[name="NombreDeUsuario"]', username);
     await page.fill('input[name="Password"]', password);
     
     // Hacer clic en el botón de login
-    await page.click('button[type="submit"]');
+    await page.click('[data-automation="IniciarSesionBtn"]');
     
     // Esperar a que la navegación se complete
     await page.waitForLoadState('networkidle');
