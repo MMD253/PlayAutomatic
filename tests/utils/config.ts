@@ -5,17 +5,18 @@ export const TEST_CONFIG = {
     // Timeouts
     defaultTimeout: 30000,
     
-    // Credenciales (reemplazar con las credenciales reales)
+    // Credenciales
     credentials: {
-        username: 'maria.adanto',
-        password: 'maria.adanto'
+        username: 'administrador',
+        password: 'administrador'  // Ajusta esto según la contraseña correcta
     },
     
     // Rutas principales
     routes: {
+        login: '/Home/Inicio/Home/Login',
         dashboard: '/Home/Inicio/Home/Dashboard',
-        login: '/Home/Inicio/Home/Login',  // Actualizada según la estructura de la URL
-        logout: '/Home/BackEnd/api/Logout/Submit'
+        logout: '/Home/BackEnd/api/Logout/Submit',
+        gestionUsuarios: '/Comun/AdministracionUsuarios/Inicio/GestionUsuario'
     }
 }; 
 
